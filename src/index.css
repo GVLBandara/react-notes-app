@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  min-height: 100vh;
+  background-color: rgb(34, 40, 49);
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .note {
+  background-color: rgb(57, 62, 70);
+  color: gold;
+}
+
+.dark-mode .note.new {
+  background-color: rgb(80, 87, 122);
+}
+
+.dark-mode textarea {
+  background-color: rgb(80, 87, 122);
+  color: gold;
+  font-size: 1.3em;
+}
+
+.dark-mode .search {
+  background-color: rgb(64, 66, 88);
+  color: gold;
+}
+
+.dark-mode .search input {
+  background-color: rgb(64, 66, 88);
+  color: gold;
+}
+
+.dark-mode .save {
+  background-color: rgb(59, 36, 49);
+  color: beige;
+}
+
+.dark-mode .save:hover {
+  background-color: rgb(78, 45, 64);
+}
+
+.dark-mode .btnMode {
+  background-color: lightgray;
+  color: black;
+}
+
+.btnMode {
+  background-color: rgb(95, 95, 95);
+  color: lightyellow;
+  font-size: large;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note {
+  background-color: gold;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note.new {
+  background-color: aqua;
+}
+
+textarea {
+  font-size: 1.3em;
+  border: none;
+  resize: none;
+  background-color: aqua;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #f6f6ffce;
+  cursor: pointer;
+}
+
+.delete-icon {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  font-size: 1.5em;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  background-color: aliceblue;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search-icon {
+  font-size: 1.3em;
+}
+
+.clear-icon:hover {
+  font-size: 1.3em;
+}
